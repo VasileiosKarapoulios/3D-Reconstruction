@@ -150,26 +150,6 @@ def plot_ray(
 
 def project_pose_to_world(keypoints_excluding_ankles, ankle_keypoints):
 
-    # Known distances between keypoints (example)
-    # distances = {
-    #     (0, 1): 0.02,  # Distance between nose and left-eye
-    #     (0, 2): 0.02,  # Distance between nose and right-eye
-    #     (1, 3): 0.06,  # Distance between left-eye and left-ear
-    #     (2, 4): 0.06,  # Distance between right-eye and right-ear
-    #     (5, 6): 0.44,   # Distance between left-shoulder and right-shoulder
-    #     (5, 7): 0.30,   # Distance between left-shoulder and left-elbow
-    #     (5, 11): 0.50,   # Distance between left-shoulder and left-hip
-    #     (6, 8): 0.30,   # Distance between right-shoulder and right-elbow
-    #     (6, 12): 0.50,   # Distance between right-shoulder and right-hip
-    #     (7, 9): 0.25,   # Distance between left-elbow and left-wrist
-    #     (8, 10): 0.25,   # Distance between right-elbow and right-wrist
-    #     (11, 12): 0.35,   # Distance between left-hip and right-hip
-    #     (11, 13): 0.50,   # Distance between left-hip and left-knee
-    #     (12, 14): 0.50,   # Distance between right-hip and right-knee
-    #     (13, 15): 0.45,   # Distance between left-knee and left-ankle
-    #     (14, 16): 0.45,   # Distance between right-knee and right-ankle
-    # }
-
     # Load calibration data
     calibration_data = np.load("3D-Reconstruction/calibration_data.npz")
     mtx = calibration_data["camera_matrix"]

@@ -1,0 +1,30 @@
+[
+    {
+        "coordinates": [
+            386,
+            905
+        ],
+        "label": "bottom-left"
+    },
+    {
+        "coordinates": [
+            651,
+            509
+        ],
+        "label": "top-left"
+    },
+    {
+        "coordinates": [
+            1312,
+            527
+        ],
+        "label": "top-right"
+    },
+    {
+        "coordinates": [
+            1469,
+            962
+        ],
+        "label": "bottom-right"
+    }
+]
